@@ -47,12 +47,14 @@ const IpoDetailPage = () => {
         <h2 className="text-xl font-semibold mb-4">IPO timeline</h2>
 
         {/* Stepper Container */}
-        <div className="relative flex justify-between items-center">
+        <div className="relative flex flex-col md:flex-row justify-between items-center">
           {/* Line Connecting Steps */}
-          <div className="absolute top-[24%] mr-[260px] left-0 w-full h-1 bg-gray-200 -z-0"></div>
+          {/* <div className="absolute top-[24%] mr-[260px] left-0 w-full h-1 bg-gray-200 -z-0"></div> */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-200 -z-0 md:w-full md:h-1 md:top-[24%]"></div>
+
 
           {steps.map((step, index) => (
-            <div key={index} className="relative z-10 flex flex-col items-center">
+            <div key={index} className="relative z-10 flex flex-col items-center mb-4 md:mb-0">
               {/* Step Circle or Checkmark */}
               <div
                 className={`w-8 h-8 flex items-center justify-center rounded-full ${
