@@ -153,8 +153,8 @@ const IpoListPage = () => {
                   <div className="text-gray-500 text-sm">{item.issueDate}</div>
                 </div>
               </td>
-              <td className="border border-gray-300 p-2">{item.issueSize}</td>
-              <td className="border border-gray-300 p-2">&#8377;{item.priceRange}</td>
+              <td className="border border-gray-300 p-2 text-center">{item.issueSize}</td>
+              <td className="border border-gray-300 p-2 text-center">&#8377;{item.priceRange}</td>
               <td className="border border-gray-300 p-2 text-center">
                 <div>&#8377;{item.minInvestment.amount}</div>
                 <div>{item.minInvestment.qty} Shares / {item.minInvestment.lots} Lots</div>

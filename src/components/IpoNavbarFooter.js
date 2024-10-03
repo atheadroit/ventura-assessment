@@ -46,10 +46,10 @@ const IpoNavbarFooter = () => {
             <button onClick={toggleMenu} className="absolute top-4 right-4 text-white text-3xl">
               &times; {/* Close Button */}
             </button>
-            <Link to="/ipolistpage" className="text-white text-2xl mb-4" onClick={toggleMenu}>IPO List</Link>
-            <a href="#about" className="text-white text-2xl mb-4" onClick={toggleMenu}>About</a>
-            <a href="#services" className="text-white text-2xl mb-4" onClick={toggleMenu}>Services</a>
-            <a href="#contact" className="text-white text-2xl" onClick={toggleMenu}>Contact</a>
+            <Link to="/ipolistpage" className="text-white text-xl mb-4" onClick={toggleMenu}>IPO List</Link>
+            <a href="#about" className="text-white text-xl mb-4" onClick={toggleMenu}>About</a>
+            <a href="#services" className="text-white text-xl mb-4" onClick={toggleMenu}>Services</a>
+            <a href="#contact" className="text-white text-xl" onClick={toggleMenu}>Contact</a>
           </div>
         )}
       </div>
